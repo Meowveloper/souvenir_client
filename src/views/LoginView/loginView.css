@@ -1,0 +1,122 @@
+.loginContainer {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	position: relative;
+}
+
+.loginLogo {
+	width: 30%;
+	height: 20%;
+	position: absolute;
+	border-radius: 50%;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 2px 2px 4px grey;
+}
+
+h3 {
+	font-size: 2rem;
+	width: 100%;
+	text-align: center;
+}
+
+.formContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 2rem;
+	box-shadow: 2px 2px 4px grey;
+	padding: 40px;
+	border-radius: 20px;
+	position: relative;
+	padding-top: 60px;
+}
+
+.inputGroup {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 0.5rem;
+}
+
+.inputGroup input {
+	padding: 10px 20px;
+	background: none;
+	border: none;
+	outline: none;
+	border-radius: 20px;
+	color: #59656f;
+	transition: 0.5s;
+	box-shadow: 4px 4px 10px grey;
+}
+
+.inputGroup small {
+	color: red;
+	font-weight: bold;
+}
+
+.inputGroup input::placeholder {
+	color: #59656f;
+}
+
+.inputGroup input:focus {
+	transform: scale(1.2, 1.2);
+	box-shadow: 8px 8px 16px grey;
+}
+.buttonGroup {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.buttonGroup button {
+	padding: 10px 20px;
+	border-radius: 20px;
+	outline: none;
+	border: none;
+	transition: 0.5s;
+}
+
+.buttonGroup button:hover {
+	transform: scale(1.5, 1.5);
+}
+
+.registerGroup {
+	font-size: small;
+	display: flex;
+	gap: 1rem;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+	width: 60px;
+	aspect-ratio: 2;
+	--_g: no-repeat radial-gradient(circle closest-side, #000 90%, #0000);
+	background: var(--_g) 0% 50%, var(--_g) 50% 50%, var(--_g) 100% 50%;
+	background-size: calc(100% / 3) 50%;
+	animation: l3 1s infinite linear;
+}
+@keyframes l3 {
+	20% {
+		background-position: 0% 0%, 50% 50%, 100% 50%;
+	}
+	40% {
+		background-position: 0% 100%, 50% 0%, 100% 50%;
+	}
+	60% {
+		background-position: 0% 50%, 50% 100%, 100% 0%;
+	}
+	80% {
+		background-position: 0% 50%, 50% 50%, 100% 100%;
+	}
+}

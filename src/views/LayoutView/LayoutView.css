@@ -1,0 +1,49 @@
+/* 
+vividSkyBlue
+mayaBlue
+periWinkle
+coralPink
+teaGreen
+*/
+
+header {
+	background: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+main {
+	padding: 10px;
+	min-height: 90vh;
+}
+
+header .logo {
+	font-size: 2rem;
+	font-weight: bold;
+	color: var(--coralPink);
+}
+
+.dropDownContainer {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.menuContainer {
+	position: fixed;
+	background-color: var(--teaGreen);
+	top: 60px;
+}
+
+.menuContainer ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 1rem;
+}
+footer {
+	background-color: pink;
+}
